@@ -13,8 +13,8 @@ import {Document, Schema, model, models} from 'mongoose';
         price?: string;
         isFree: boolean;
         url?: string;
-        category?: Schema.Types.ObjectId | string; // Assuming Category is a mongoose model or a string ID
-        organizer?: Schema.Types.ObjectId | string; // Assuming User is a mongoose model or a string ID
+        category?: {_id:string, name:string} // Assuming Category is a mongoose model or a string ID
+        organizer?: {_id:string, firstName:string, lastName:string} // Assuming User is a mongoose model or a string ID
     }
     
 
