@@ -7,4 +7,17 @@ let cached = (global as any).mongoose || {conn: null, promise:null}
 
 export const connectToDatabase =async () => {
   if(cached.conn) return cached.connect;  
+
+  if(!MONGODB_URI) throw new Error('MONGODB URI is missing')
+  cached.promise = cached.promise || mongoose.connect(MONGODB_URI,{
+dbName:'evently', 
+bufferCommands:false,
+})
+
+
+cached.conn = await cached.promise;
+return cached.conn;
 }
+
+// server actions
+// connectToDatabase() ...
