@@ -204,7 +204,7 @@ body {
     @apply text-[12px] font-medium leading-[20px];
   }
 
-  /* SHADCN OVERRIDES */
+  /* OVERRIDES OF SHADCN */
   .select-field {
     @apply w-full bg-grey-50 h-[54px] placeholder:text-grey-500 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent !important;
   }
@@ -230,7 +230,7 @@ body {
   }
 }
 
-/* ========================================== CLERK STYLES */
+/* ========================================== STYLES OF CLERK */
 .cl-logoImage {
   height: 38px;
 }
@@ -253,7 +253,7 @@ body {
   background-color: #705CF7
 }
 
-/* ========================================== REACT-DATEPICKER STYLES */
+/* ========================================== STYLES OF REACT-DATEPICKER*/
 .datePicker {
   width: 100%;
 }
