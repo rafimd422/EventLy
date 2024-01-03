@@ -1,7 +1,7 @@
 import EventForm from '@/components/shared/EventForm'
 import React from 'react'
 
-const CreateEvent = () => {
+const UpdateEvent = () => {
 const { sesstionClaims } = auth();
 
 const userId = sessionClaims?.userId as string
@@ -14,10 +14,10 @@ Create Event
 </section>
 
 <div className="wrapper my-8">
-    <EventForm userId={userId} type="Create" />
+    <EventForm userId={userId} type="Update" />
 </div>
 </>
   )
 }
 
-export default CreateEvent
+export default UpdateEvent
